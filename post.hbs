@@ -2,7 +2,7 @@
 
 {{#post}}
 
-{{#if image}}
+{{#if feature_image}}
 {{> "header-post-cover"}}
 {{else}}
 {{> "header-blog-post"}}
@@ -10,7 +10,7 @@
 
 <main>
   <article class="{{post_class}} site-width">
-    {{#unless image}}
+    {{#unless feature_image}}
     <header>
       <h1 class="post-title">{{title}}</h1>
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
@@ -23,9 +23,9 @@
 
     {{#author}}
     <footer>
-      {{#if image}}
+      {{#if feature_image}}
       <figure class="desktop">
-        <img src="{{image}}" alt="Author image" />
+        <img src="{{img_url}}" alt="Author image" />
       </figure>
       {{/if}}
 
@@ -41,7 +41,7 @@
 <aside class="site-width">
   <h6>Read more</h6>
   {{#next_post}}
-  <a class="{{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+  <a class="{{#if feature_image}}cover" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
     <section class="post">
       <h5>{{title}}</h5>
       <p>{{excerpt words="19"}}&hellip;</p>
@@ -49,7 +49,7 @@
   </a>
   {{/next_post}}
   {{#prev_post}}
-  <a class="right {{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+  <a class="right {{#if feature_image}}cover" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
     <section class="post">
       <h5>{{title}}</h5>
       <p>{{excerpt words="19"}}&hellip;</p>
