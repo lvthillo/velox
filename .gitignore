@@ -1,1 +1,3 @@
 .DS_Store
+partials/loaders/load-disqus-comment.hbs
+partials/loaders/load-google-analytics.hbs
