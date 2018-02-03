@@ -36,6 +36,7 @@
     </footer>
     {{/author}}
   </article>
+  {{> loaders/load-disqus-comment}}
 </main>
 
 <aside class="site-width">
@@ -62,6 +63,6 @@
   Here, you can add disqus comment.
   Also go to partials/disqus-comment to set your SHORTNAME.
 }}
-{{> loaders/load-disqus-comment}}
+{{!> loaders/load-disqus-comment}}
 
 {{/post}}

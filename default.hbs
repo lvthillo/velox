@@ -33,7 +33,7 @@
     {{{body}}}
 
     <footer class="site-footer">
-      <time datetime="{{date format="YYYY"}}">{{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</time>
+      <time datetime="{{date format="YYYY"}}">{{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. © All rights reserved</time>
     </footer>
 
     {{> loaders/load-fonts}}
@@ -43,6 +43,6 @@
       Here, you can add Google Analytics.
       Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
     }}
-    {{!> loaders/load-google-analytics}}
+    {{> loaders/load-google-analytics}}
   </body>
 </html>
