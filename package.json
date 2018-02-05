@@ -1,4 +1,13 @@
 {
-  "name": "Velox",
-  "version": "0.3.0"
+    "name": "velox",
+    "description": "A Personal blogging theme for Ghost.",
+    "version": "1.0.0",
+    "author": {
+        "name": "lvthillo",
+        "email": "lorenz.vanthillo@gmail.com",
+        "url": "https://lvthillo.com"
+    },
+    "config": {
+        "posts_per_page": 5
+    }
 }
