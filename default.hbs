@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -36,8 +35,10 @@
       <time datetime="{{date format="YYYY"}}">{{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. © All rights reserved</time>
     </footer>
 
+    {{ghost_foot}}
+
     {{> loaders/load-fonts}}
-    {{> loaders/load-prism}}
+    {{!> loaders/load-prism}}
     {{> loaders/load-lazycover}}
     {{!
       Here, you can add Google Analytics.
